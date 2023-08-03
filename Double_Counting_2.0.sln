@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Double_Counting_2.0", "Double_Counting_2.0\Double_Counting_2.0.csproj", "{54191C0A-5AE1-4D5A-AF15-705D5EC5BC4A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54191C0A-5AE1-4D5A-AF15-705D5EC5BC4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54191C0A-5AE1-4D5A-AF15-705D5EC5BC4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54191C0A-5AE1-4D5A-AF15-705D5EC5BC4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54191C0A-5AE1-4D5A-AF15-705D5EC5BC4A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F18964E2-C22D-429F-A1AB-5B73F070C6D1}
+	EndGlobalSection
+EndGlobal

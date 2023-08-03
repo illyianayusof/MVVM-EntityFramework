@@ -1,0 +1,53 @@
+﻿<UserControl x:Class="Double_Counting_2._0.Views.CounterView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Double_Counting_2._0.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="#FF28282B" RenderTransformOrigin="0.836,0.484" Margin="0,0,0,-27" >
+        
+
+
+        <!--<Grid.ColumnDefinitions>
+            <ColumnDefinition Width="713*"/>
+            <ColumnDefinition Width="87*"/>
+        </Grid.ColumnDefinitions>-->
+
+        <Label Content="DOUBLE COUNTING" HorizontalAlignment="Left" Margin="267,10,0,0" VerticalAlignment="Top" Height="37" Width="266" FontSize="20" HorizontalContentAlignment="Center" Foreground="White"/>
+        <Label Content="Counter ID" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="393,87,0,0" VerticalAlignment="Top" Width="143" Background="#FFEAEAEA" BorderBrush="Black" BorderThickness="2,2,2,2" Foreground="Black"/>
+        <Label Content="Pile 01" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Width="72" Background="#FFB0A8A8" Margin="388,254,0,0" BorderBrush="#FF585454" BorderThickness="2,2,2,2" RenderTransformOrigin="0.508,0.269" Height="30"/>
+        <Label Content="Pile 02" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Width="72" Background="#FFB0A8A8" Margin="388,307,0,0" BorderBrush="#FF585454" BorderThickness="2,2,2,2" RenderTransformOrigin="0.226,0.714"/>
+        <Label Content="Pile 03" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Width="72" Background="#FFB0A8A8" Margin="388,358,0,0" BorderBrush="#FF585454" BorderThickness="2,2,2,2"/>
+        <Label Content="Sheet Count" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="393,124,0,0" VerticalAlignment="Top" Width="143" Background="#FFEAEAEA" BorderBrush="Black" BorderThickness="2,2,2,2"/>
+        <Label Content="Timestamp Printing" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="393,160,0,0" VerticalAlignment="Top" Width="143" Background="#FFEAEAEA" BorderBrush="Black" BorderThickness="2,2,2,2"/>
+        <Label Content="Edge Pile Sensor 01" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="594,254,0,0" VerticalAlignment="Top" Width="144" Background="#FFEAEAEA" BorderBrush="Black" BorderThickness="2,2,2,2" Height="30"/>
+        <Label Content="Edge Pile Sensor 02" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="594,307,0,0" VerticalAlignment="Top" Width="144" Background="#FFEAEAEA" BorderBrush="Black" BorderThickness="2,2,2,2"/>
+        <Label Content="Edge Pile Sensor 03" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="594,358,0,0" VerticalAlignment="Top" Width="144" Background="#FFEAEAEA" BorderBrush="Black" BorderThickness="2,2,2,2"/>
+        <Label Content="Machine Status" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="615,87,0,0" VerticalAlignment="Top" Width="142" Background="#FFEAEAEA" BorderBrush="Black" BorderThickness="2,2,2,2"/>
+        <!--<DataGrid Name="datagrid1" ItemsSource="{Binding SubStopReason}"  Margin="22,288,612,26"/>-->
+        <!--<Label  Margin="21,206,599,162" />-->
+        <Label Content="{Binding Timer.CounterID}" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="267,87,0,0" VerticalAlignment="Top" Background="#FFE8C7FF" Height="28" Width="121" BorderBrush="#FF060202" BorderThickness="1,1,1,1"/>
+        <Label Content="{Binding Timer.SheetCount}" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="267,126,0,0" VerticalAlignment="Top" Background="#FFE8C7FF" Height="28" Width="121" BorderBrush="#FF060202" BorderThickness="1,1,1,1"/>
+        <Label Content="{Binding Timer.TimestampPrinting}" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="267,162,0,0" VerticalAlignment="Top" Background="#FFE8C7FF" Height="28" Width="121" BorderBrush="#FF060202" BorderThickness="1,1,1,1"/>
+        <Label x:Name="label" Content="Yellow" Background="{Binding Timer.YellowBG}" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="37,87,0,0" VerticalAlignment="Top" Width="142"  BorderBrush="Black" BorderThickness="2,2,2,2"/>
+        <Label Content="Bank Note" Background="{Binding Timer.BankNoteBG}" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="37,124,0,0" VerticalAlignment="Top" Width="142"  BorderBrush="Black" BorderThickness="2,2,2,2"/>
+        <Label Content="Black" Background="{Binding Timer.BlackBG}" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="37,160,0,0" VerticalAlignment="Top" Width="143"  BorderBrush="Black" BorderThickness="2,2,2,2"/>
+        <Label Content="{Binding Timer.CounterID}" HorizontalAlignment="Left" Margin="58,256,0,0" VerticalAlignment="Top" Background="#FFCFD2DB" Height="28" Width="122" BorderBrush="#FF060202" BorderThickness="1,1,1,1"/>
+        <Label Content="{Binding Timer.CounterID}" HorizontalAlignment="Left" Margin="58,307,0,0" VerticalAlignment="Top" Background="#FFCFD2DB" Height="28" Width="122" BorderBrush="#FF060202" BorderThickness="1,1,1,1"/>
+        <Label Content="{Binding Timer.CounterID}" HorizontalAlignment="Left" Margin="58,360,0,0" VerticalAlignment="Top" Background="#FFCFD2DB" Height="28" Width="122" BorderBrush="#FF060202" BorderThickness="1,1,1,1"/>
+        <Label Content="Edge Sensor 1" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="184,255,0,0" VerticalAlignment="Top" Width="144" Background="#FFEAEAEA" BorderBrush="Black" BorderThickness="2,2,2,2"/>
+        <Label Content="Camera" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="184,358,0,0" VerticalAlignment="Top" Width="144" Background="#FFEAEAEA" BorderBrush="Black" BorderThickness="2,2,2,2"/>
+        <Label Content="Edge Sensor 2" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="184,307,0,0" VerticalAlignment="Top" Width="144" Background="#FFEAEAEA" BorderBrush="Black" BorderThickness="2,2,2,2"/>
+        <Label Content="{Binding Timer.CounterID}" HorizontalAlignment="Left" Margin="464,256,0,0" VerticalAlignment="Top" Background="#FFCFD2DB" Height="28" Width="122" BorderBrush="#FF060202" BorderThickness="1,1,1,1"/>
+        <Label Content="{Binding Timer.CounterID}" HorizontalAlignment="Left" Margin="464,307,0,0" VerticalAlignment="Top" Background="#FFCFD2DB" Height="28" Width="122" BorderBrush="#FF060202" BorderThickness="1,1,1,1"/>
+        <Label Content="{Binding Timer.CounterID}" HorizontalAlignment="Left" Margin="464,360,0,0" VerticalAlignment="Top" Background="#FFCFD2DB" Height="28" Width="122" BorderBrush="#FF060202" BorderThickness="1,1,1,1"/>
+        <Label Content="{Binding Timer.CurrTime}" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,47,0,0" VerticalAlignment="Top" Height="34" Width="184" Foreground="White"/>
+        <Label Content="{Binding Timer.NewData}" HorizontalAlignment="Left" Margin="615,121,0,0" VerticalAlignment="Top" Width="142" Height="69" BorderBrush="#FF060202" BorderThickness="1,1,1,1" Background="#FFCFD2DB" />
+
+
+        <!--<Button Content="Add" Command="{Binding NavigateCommand}" HorizontalAlignment="Left" Margin="665,205,0,0" VerticalAlignment="Top"  />-->
+        <!--<Label HorizontalAlignment="Right" Name="Clock" Foreground="WhiteSmoke" Opacity="0.7" VerticalAlignment="Center" Content="{Binding currentTime}" />-->
+    </Grid>
+</UserControl>
